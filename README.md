@@ -132,3 +132,42 @@ Thuesday
 	...
 <!-- END -->
 ```
+
+##### Including
+
+You can load one template into another one. Data are global, so can be used in both templates. You are writting filename without extension.
+
+```html
+<!-- INCLUDE header -->
+```
+
+#### $data
+
+TODO
+
+### theme( $theme_name  )
+Your folder structure might look like (if you want to use themes):
+
+```
+/views/
+	/my_theme 
+		/css 
+			style.css 
+		/img 
+		/js 
+		/tpl (this folder is required) 
+			template_file.tpl
+
+	/my_second_theme 
+		/css 
+			style.css 
+		/img 
+		/js 
+		/tpl (this folder is required) 
+			template_file.tpl
+```
+
+You can simply switch between themes:
+```php
+$this->parser->theme( 'my_second_theme' );
+```
