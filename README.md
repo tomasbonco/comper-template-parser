@@ -152,19 +152,20 @@ You can load one template into another one. Data are global, so can be used in b
 #### $config
 
 option             | default value                         | meaning
-allow_modificators | TRUE                                  | Allow modificators
-append             | array()                               | Set 'common' arrays for append() function
-clean              | TRUE                                  | Delete pseudovalues
-disable_appends    | FALSE                                 | Turns appends off
-disable_conditions | FALSE                                 | Turns conditions off
-disable_cycles	   | FALSE                                 | Turns cycles off
-disable_includes   | FALSE                                 | Turns includes off
-disable_variables  | FALSE                                 | Turns variables off
-exceptions         | array('memory_usage', 'elapsed_time') | Ignored pseudo-variables
-extension          | 'tpl'                                 | Extension of templates
-is_string          | FALSE                                 | Parse from string (when false, it's parsing files)
-show               | TRUE                                  | Show the result
-theme              | ''                                    | Set theme for your project
+-------------------|---------------------------------------|----------------------------------------------------|
+allow_modificators | TRUE                                  | Allow modificators                                 |
+append             | array()                               | Set 'common' arrays for append() function          |
+clean              | TRUE                                  | Delete pseudovalues                                |
+disable_appends    | FALSE                                 | Turns appends off                                  |
+disable_conditions | FALSE                                 | Turns conditions off                               |
+disable_cycles	   | FALSE                                 | Turns cycles off                                   |
+disable_includes   | FALSE                                 | Turns includes off                                 |
+disable_variables  | FALSE                                 | Turns variables off                                |
+exceptions         | array('memory_usage', 'elapsed_time') | Ignored pseudo-variables                           |
+extension          | 'tpl'                                 | Extension of templates                             |
+is_string          | FALSE                                 | Parse from string (when false, it's parsing files) |
+show               | TRUE                                  | Show the result                                    |
+theme              | ''                                    | Set theme for your project                         |
 
 
 ### theme( $theme_name  )
