@@ -69,8 +69,66 @@ You can go to unlimited deep.
 ```php
 $data = array('user' => array
 (
-	1 => array('username' => 'life', 'email' => 'life@earth.zz', 'address' => 'Earth 001, Milky way'),
-	2 => array('username' => 'anonym', 'email' => 'seeyou@friday.zz', 'address' => 'Paris, France')
+	array('username' => 'life', 'email' => 'life@earth.zz', 'address' => 'Earth 001, Milky way'),
+	array('username' => 'anonym', 'email' => 'seeyou@friday.zz', 'address' => 'Paris, France')
 ));
 ```
 
+In TPL's defined using syntax:
+```html
+<!-- BEGIN {user} -->
+<div class="user">
+	<div> Username: {username} </div>
+	<div> Email: {email} </div>
+	<div> Address: {address} </div>
+</div>
+<!-- END {user} -->
+```
+
+Naming cycle as recommended. You can also use prefixes and nested cycles. Notice BEGIN and END formula for naming cycle and second line for prefix.
+
+```html
+<!-- BEGIN {user} AS user -->
+
+	Name: {user.name}
+	
+	<!-- BEGIN {user.friends} AS friend -->
+		Name: {friend.name}
+	<!-- END friends -->
+	
+<!-- END user -->
+```
+
+##### Conditions
+
+Are very intuitive. You can use php functions and also modificators (recommended).
+
+```html
+<!-- IF {users|count} > 0 -->
+
+	<!-- BEGIN users -->
+	...
+	<!-- END users -->
+	
+<!-- ELSE -->
+	...
+<!-- END -->
+```
+
+```html
+<!-- IF {day} == 1 -->
+Monday
+<!-- ELSEIF {day} == 2 -->
+Thuesday
+<!-- ELSEIF {day} == 3 -->
+...
+<!-- END -->
+```
+
+```html
+<!-- IF is_numeric( {pow} ) && pow( {num}, 2 ) > 4 -->
+	...
+<!-- ELSE -->
+	...
+<!-- END -->
+```
