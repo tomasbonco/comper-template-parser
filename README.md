@@ -1,5 +1,6 @@
 # COMPER Template Parser
 
+COMPER Template Parser is PHP class, which separates logic (PHP code) from design (templates - HTML). We believe that you should have pure PHP without any HTML code, and pure HTML without any PHP code. It helps you to be productive and makes your code much more readable and clean for long time. Since 2010 there is version for CodeIgniter (PHP Framework).
 
 ## Docs
 
@@ -252,7 +253,7 @@ To specify area of template that will NOT be parsed use (very useful when using 
 ```
 
 
-## PHP vs. Codeigniter version
+## PHP vs. CodeIgniter version
 
 PHP syntax:
 
