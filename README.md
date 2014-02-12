@@ -220,7 +220,18 @@ You can simply switch between themes:
 $this->parser->theme( 'my_second_theme' );
 ```
 
-### append()
+### append( $name, $array )
+
+Passing data into parser outside of parser() function. Can be used in models that are autoloaded.
+
+```php
+$this->parser->append( 'urls', array( 'apple' => array( 'url' => 'http://apple.com', 'title' => 'Apple Homepage') ) );
+$this->parser->parse( 'template' );
+```	
+
+```html
+<a href="{urls->apple->url}"> {urls->apple->title} </a>
+```
 
 ### Template only syntax
 
