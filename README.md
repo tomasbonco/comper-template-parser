@@ -70,13 +70,11 @@ You can go to unlimited deep.
 {name|trim|ucfirst|str_replace[&, " ", "-"]}
 ```
 
-Variables inside variables can be also used.
+Ampersand (&) stands for 'this'. **Variables inside variables** can also be used.
 
 ```html
 {lang->{lang}->error_msg}
 ```
-
-Ampersand (&) stands for 'this'.
 
 ##### Cycles
 
