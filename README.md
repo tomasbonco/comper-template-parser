@@ -250,3 +250,25 @@ To specify area of template that will NOT be parsed use (very useful when using 
 	Value: {item}
 	Syntax: <!-- NOCODE --> {item} <!-- /NOCODE -->
 ```
+
+
+## PHP vs. Codeigniter version
+
+PHP syntax:
+
+```php
+$parser = new parser;
+
+$parser->append();
+$parser->theme();
+$parser->parse();
+```
+
+CI syntax:
+```php
+$this->library->load( 'parser' );
+
+$this->parser->append();
+$this->parser->theme();
+$this->parser->parse();
+```
