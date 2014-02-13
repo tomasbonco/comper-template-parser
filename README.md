@@ -1,4 +1,4 @@
-# COMPER Template Parser
+# COMPER Template Parser v 3.0
 
 COMPER Template Parser is template engine written in PHP, which separates logic (PHP code) from design (templates - HTML). We believe that you should have pure PHP without any HTML code, and pure HTML without any PHP code. It helps you to be productive and makes your code much more readable, modular and clean for long time. Since 2010 there is version for CodeIgniter (PHP Framework).
 
@@ -182,10 +182,10 @@ disable_conditions | FALSE                                 | Turns conditions of
 disable_cycles	   | FALSE                                 | Turns cycles off                                   |
 disable_includes   | FALSE                                 | Turns includes off                                 |
 disable_variables  | FALSE                                 | Turns variables off                                |
-exceptions         | array('memory_usage', 'elapsed_time') | Ignored pseudo-variables                           |
+exceptions         | array()                               | Ignored pseudo-variables                           |
 extension          | 'tpl'                                 | Extension of templates                             |
 is_string          | FALSE                                 | Parse from string (when false, it's parsing files) |
-path               | '%path%/views/'                       | Location of templates                              |
+path               | '.'                                   | Location of templates                              |
 show               | TRUE                                  | Show the result                                    |
 suffix_theme_only  | TRUE                                  | Use template_suffix only when themes are used      |
 template_suffix    | 'tpl'                                 | Directory of templates in view folder              |
@@ -273,6 +273,14 @@ $this->parser->append();
 $this->parser->theme();
 $this->parser->parse();
 ```
+
+CI configuration differences:
+
+option             | default value                         | meaning
+-------------------|---------------------------------------|----------------------------------------------------|
+append             | array( 'config' => CI_Config )        | Set 'common' arrays for append() function          |
+exceptions         | array('memory_usage', 'elapsed_time') | Ignored pseudo-variables                           |
+path               | '%path%/views/'                       | Location of templates                              |
 
 ## Future
 
