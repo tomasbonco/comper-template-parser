@@ -273,3 +273,7 @@ $this->parser->append();
 $this->parser->theme();
 $this->parser->parse();
 ```
+
+## Future
+
+As I switched to Node.JS, I'm not planning to support this project any longer. That's why I finished version 3, closed CTP website and moved to github. I want to give this to the comumnity as a gift and I want community to take care about it. I'll try to answer Issues and also Pull new requests (but not very often). You guys are free to continue in my work any way you like, fork it, change it, improve it, build your own project upon it or pull a request. I would be really very glad if you mension me if you get ispired or use some parts of this work in your projects, but I don't require it.
