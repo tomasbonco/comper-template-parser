@@ -172,6 +172,8 @@ Thuesday
 
 #### $config
 
+Note: There are [differences between PHP and CodeIgniter version](https://github.com/TomasBonco/comper-template-parser/blob/master/README.md#php-vs-codeigniter-version).
+
 option             | default value                         | meaning
 -------------------|---------------------------------------|----------------------------------------------------|
 allow_modificators | TRUE                                  | Allow modificators                                 |
