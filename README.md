@@ -74,7 +74,7 @@ You can go to unlimited deep.
 Ampersand (&) stands for 'this'. **Variables inside variables** can also be used.
 
 ```html
-{lang->{lang}->error_msg}
+{lang->{current_lang}->error_msg}
 ```
 
 ##### Cycles
