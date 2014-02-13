@@ -9,9 +9,8 @@
  * @subpackage	Libraries
  * @author		Tomáš Bončo
  * @category	Parser
- * @link		http://parser.comper.sk/en/
- * @licence     http://parser.comper.sk/en/licence/
- * @year        2011-2012
+ * @link		https://github.com/TomasBonco/comper-template-parser/
+ * @year        2014
  * @version     3
  *
  *

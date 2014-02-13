@@ -5,13 +5,11 @@
  *
  * Parsing templates
  *
- * @framework	CodeIgniter
  * @subpackage	Libraries
  * @author		Tomáš Bončo
  * @category	Parser
- * @link		http://parser.comper.sk/en/
- * @licence     http://parser.comper.sk/en/licence/
- * @year        2011-2012
+ * @link		https://github.com/TomasBonco/comper-template-parser/
+ * @year        2014
  * @version     3
  *
  *
@@ -1264,5 +1262,4 @@ class parser
 
 // END Parser Class
 
-/* End of file Parser.php */
-/* Location: ./application/libraries/Parser.php */
+/* End of file Parser_PHP.php */
