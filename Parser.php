@@ -11,7 +11,7 @@
  * @category	Parser
  * @link		https://github.com/TomasBonco/comper-template-parser/
  * @year        2014
- * @version     3
+ * @version     3.0.1
  *
  *
  * Special thanks to God for talent, family for supporting me and community for motivating me and also:
