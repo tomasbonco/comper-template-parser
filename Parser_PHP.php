@@ -989,6 +989,11 @@ class parser
 				{
 					$branch = trim( $branch );
 
+					if ( ! empty( $value->result[$branch] ) && is_object( $value->result[$branch]) )
+					{
+						$value->result[$branch] = json_decode(json_encode($value->result[$branch]), TRUE );
+					}
+
 					if ( isset( $value->result[$branch] ))
 					{
 						$value->result = $value->result[$branch];
