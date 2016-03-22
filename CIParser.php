@@ -18,7 +18,7 @@
  *		Character Art: http://bit.ly/MBTCVq
  */
  
-class parser
+class CIParser
 {
 	private $ci;	// CodeIgniter instance
 	private $data;
@@ -653,7 +653,8 @@ class parser
 	
 	function _find_nearest( $arr, $sp, $ep = FALSE )
 	{
-		return reset( $this->_find_between( $arr, $sp, $ep ) );
+		$obj = $this->_find_between( $arr, $sp, $ep );
+		return reset( $obj );
 	}
 	
 	/**
