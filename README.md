@@ -269,7 +269,7 @@ $parser->parse();
 
 CI syntax:
 ```php
-$this->library->load( 'parser' );
+$this->load->library( 'ciparser' );
 
 $this->parser->append();
 $this->parser->theme();
